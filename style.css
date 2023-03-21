@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    user-select: none;
+}
+
+section {
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 100px;
+}
+
+.text {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.text p {
+    text-align: center;
+    width: 300px;
+    font-size: 40px;
+}
+
+.game {
+    display: flex;
+    gap: 40px;
+}
+
+.game1,
+.game2,
+.game3 {
+    display: grid;
+    width: 300px;
+    height: 300px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.gamezone1,
+.gamezone2,
+.gamezone3 {
+    border: 3px solid gray;
+    font-size: 70px;
+    color: white;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.active {
+    border: 3px solid blueviolet;
+}
+
+.players {
+    display: flex;
+    gap: 30px;
+    position: relative;
+    bottom: 50px;
+}
+
+.players h3 {
+    color: white;
+    font-size: 30px;
+}
+
+.players span {
+    color: white;
+    font-size: 30px;
+    color: red;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score span {
+    font-size: 50px;
+    color: red;
+    position: relative;
+    top: 50px;
+}
